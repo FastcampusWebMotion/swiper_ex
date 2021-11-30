@@ -11,6 +11,7 @@
    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 </head>
 <body>
+   <h1>DCODELAB</h1>
    <main>
       <section class="swiper-wrapper">
          <article class="swiper-slide">
@@ -52,7 +53,7 @@
                </div>
             </div>
          </article>
-         
+
          <article class="swiper-slide">
             <div class="inner">
                <div class="con">
@@ -66,9 +67,13 @@
 
       <nav class="swiper-pagination"></nav>
       
-      <nav class="swiper-button-prev"></nav>
-      <nav class="swiper-button-next"></nav>
+      <nav class="swiper-button-prev navi"></nav>
+      <nav class="swiper-button-next navi"></nav>
    </main>
+
+   <footer>
+      2022 DCODELAB &copy; ALL RIGHTS RESERVED.
+   </footer>
 
    <script>
       //기본 스와이퍼 연결볍
@@ -82,7 +87,8 @@
          centeredSlides: true, //활성화 패널을 항상 가로 가운대 배치
          pagination: {
             el: ".swiper-pagination", //페이지네이션 버튼 추가
-            clickable: true //클릭가능여부 설정
+            //clickable: true //클릭가능여부 설정
+            type: "fraction"
          },
          navigation: {
             prevEl: ".swiper-button-prev",
